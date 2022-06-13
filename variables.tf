@@ -246,3 +246,9 @@ variable "os_profile_secrets" {
   type        = list(map(string))
   default     = []
 }
+
+variable "private_ip_address_allocation" {
+  description = "If the private IP should be dynamic or static"
+  type = string
+  default = "Dynamic"
+}
